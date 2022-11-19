@@ -5,11 +5,11 @@ const Navbar = () => {
 
     const menuItems = <React.Fragment>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/">About</Link></li>
-        <li><Link to="/">Apointment</Link></li>
-        <li><Link to="/">Reviews</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/appointment">Apointment</Link></li>
+        <li><Link to="/reviews">Reviews</Link></li>
         <li><Link to="/">Contact us</Link></li>
-        <li><Link to="/">Log in</Link></li>
+        <li><Link to="/login">Log in</Link></li>
     </React.Fragment>
 
     return (
