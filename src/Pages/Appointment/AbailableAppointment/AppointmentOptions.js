@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AppointmentOptions = ({appointmentOption}) => {
+const AppointmentOptions = ({appointmentOption, setTreatment}) => {
 const {name, slots } = appointmentOption;
-console.log(appointmentOption);
+//console.log(appointmentOption);
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
   <div className="card-body text-center">
@@ -10,7 +10,9 @@ console.log(appointmentOption);
     <p>{slots.length > 0 ? slots[0] : 'Try another day'}</p>
     <p>{slots.length} slots available</p>
     <div className="card-actions">
-      <label htmlFor="booking-modal" className="btn btn-primary">Book Appointment</label>
+      <label htmlFor="booking-modal" className="btn btn-primary"
+      onClick={()=> setTreatment(appointmentOption)}
+      >Book Appointment</label>
 
     </div>
   </div>
