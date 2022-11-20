@@ -28,6 +28,7 @@ const AbailableAppointment = ({selectDate}) => {
             {
                 treatment &&
             <BookingModal
+            selectDate = {selectDate}
             treatment = {treatment}
             ></BookingModal>
             }
